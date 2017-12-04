@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf3c459e-6261-42bc-8f0e-ad5dcb0bc3ff" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/visualization.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Traffic_Sign_Classifier.ipynb" afterPath="$PROJECT_DIR$/Traffic_Sign_Classifier.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/writeup_template_project2.md" afterPath="$PROJECT_DIR$/writeup_template_project2.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,8 +32,8 @@
         <entry file="file://$PROJECT_DIR$/writeup_template_project2.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1617">
-                <caret line="206" column="0" lean-forward="true" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
+              <first_editor relative-caret-position="-277">
+                <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -199,8 +198,8 @@
     <entry file="file://$PROJECT_DIR$/writeup_template_project2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1617">
-            <caret line="206" column="0" lean-forward="true" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
+          <first_editor relative-caret-position="-277">
+            <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor>

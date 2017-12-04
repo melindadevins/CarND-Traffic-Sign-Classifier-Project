@@ -1,4 +1,4 @@
-#**Traffic Sign Recognition** 
+# **Traffic Sign Recognition**
 
 
 ---
@@ -46,9 +46,9 @@ Here I will provide a reference to the sections below that address each individu
   - [Preprocessing](#preprocessing)
   - [Model Architecture](#model-architecture)
   - [Model Training](#model-training)
-  - [Solution Approach](#solution-approach)
+  - [Model Accuracy](#model-accuracy)
 - Test A Model On New Images
-  - [Acquiring New Images](#acquiring-new-images)
+  - [Choose New Images](#choose-new-images)
   - [Performance on New Images](#performance-on-new-images)
   - [Model Certainty Softmax Probabilities](#model-certainty-softmax-probabilities)
 
@@ -129,7 +129,7 @@ My final model consisted of the following layers:
 | OUTPUT                | 43 (# of sign types)
 
  
-
+### Model Training
 
 3. Describe how you trained your model. The discussion can include the type of optimizer,
 the batch size, number of epochs and any hyperparameters such as learning rate.
@@ -143,9 +143,11 @@ rate = 0.005
 mu = 0
 sigma = 0.1
 
-A drop out (keep 80%) was used in the training and keep 100% in the validation.
+A drop out (keep 75%) was used in the training and keep 100% in the validation.
 
-####4. Describe the approach taken for finding a solution and getting the validation
+### Model Accuracy
+
+4. Describe the approach taken for finding a solution and getting the validation
 set accuracy to be at least 0.93. Include in the discussion the results on the training,
 validation and test sets and where in the code these were calculated.
 Your approach may have been an iterative process, in which case, outline the steps you took to get
@@ -162,7 +164,9 @@ My final model results were:
 Drop out greatly improve accuracy
 
 
-###Test a Model on New Images
+## Test a Model on New Images
+
+### Choose New Images
 
 1. Choose seven German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
@@ -173,6 +177,8 @@ Here are seven German traffic signs that I found on the web:
 
 The image that the network did not recognize correctly was speed limit 100. It mistook it as "keep right" sign. Perhaps because the two signs
 are simular in gray scale
+
+### Performance on New Images
 
 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
@@ -188,6 +194,8 @@ Here are the results of the prediction:
 |  20 KM / h		|  20 KM / h
 | Road work         | Road work
 The model was able to correctly recognize 6 of the 7 traffic signs, which gives an accuracy of 86%.
+
+### Model Certainty Softmax Probabilities
 
 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax
 probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign
