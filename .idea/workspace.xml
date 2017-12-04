@@ -17,8 +17,8 @@
         <entry file="file://$PROJECT_DIR$/writeup_template.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="459">
-                <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="19" />
+              <first_editor relative-caret-position="153">
+                <caret line="39" column="0" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="39" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -32,8 +32,8 @@
         <entry file="file://$PROJECT_DIR$/writeup_template_project2.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-277">
-                <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+              <first_editor relative-caret-position="527">
+                <caret line="202" column="43" lean-forward="false" selection-start-line="202" selection-start-column="43" selection-end-line="202" selection-end-column="43" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -48,6 +48,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>brown</find>
+      <find>github</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -185,8 +186,8 @@
     <entry file="file://$PROJECT_DIR$/writeup_template.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="459">
-            <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="19" />
+          <first_editor relative-caret-position="153">
+            <caret line="39" column="0" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="39" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor>
@@ -198,8 +199,8 @@
     <entry file="file://$PROJECT_DIR$/writeup_template_project2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-277">
-            <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <first_editor relative-caret-position="527">
+            <caret line="202" column="43" lean-forward="false" selection-start-line="202" selection-start-column="43" selection-end-line="202" selection-end-column="43" />
             <folding />
           </first_editor>
           <second_editor>

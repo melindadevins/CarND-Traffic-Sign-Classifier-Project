@@ -1,5 +1,7 @@
 # **Traffic Sign Recognition**
 
+here is a link to my [project code] https://github.com/melindadevins/CarND-Traffic-Sign-Classifier-Project)
+
 
 ---
 
@@ -193,6 +195,7 @@ Here are the results of the prediction:
 | 100 KM / h		|  Keep right
 |  20 KM / h		|  20 KM / h
 | Road work         | Road work
+
 The model was able to correctly recognize 6 of the 7 traffic signs, which gives an accuracy of 86%.
 
 ### Model Certainty Softmax Probabilities
