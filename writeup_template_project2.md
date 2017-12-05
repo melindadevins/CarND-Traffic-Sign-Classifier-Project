@@ -48,6 +48,7 @@ Here I will provide a reference to the sections below that address each individu
   - [Preprocessing](#preprocessing)
   - [Model Architecture](#model-architecture)
   - [Model Training](#model-training)
+  - [Model Approach](#model-approach)
   - [Model Accuracy](#model-accuracy)
 - Test A Model On New Images
   - [Choose New Images](#choose-new-images)
@@ -123,10 +124,10 @@ My final model consisted of the following layers:
 | Flatten				| Input 5x5x16 Output 400
 | Layer 3 Fully Connected	| input 400 Output 200
 | RELU					| 
-| DROPOUT				| keep 80%
+| DROPOUT				| keep 75%
 | Layer 4 Fully Connected | Input 200, Output 100
 | RELU					|
-| DROPOUT				| keep 80%
+| DROPOUT				| keep 75%
 | Layer 5 Fully Connected | Input 100, Output 43
 | OUTPUT                | 43 (# of sign types)
 
@@ -138,7 +139,7 @@ the batch size, number of epochs and any hyperparameters such as learning rate.
 
 The basic Lenet architecture was used for the model. Dropout was included on the
 fully connected layers. The Adam optimizer was used for computing and applying gradients.
-The following is hypyter parameter values:
+The following is hyper parameter values:
 EPOCHS = 10
 BATCH_SIZE = 128
 rate = 0.005
@@ -146,6 +147,36 @@ mu = 0
 sigma = 0.1
 
 A drop out (keep 75%) was used in the training and keep 100% in the validation.
+
+
+### Model Approach
+
+Initially, the basic LeNet architecture (5 layer) was used for the model, because LeNet architecture perform very well in image recognition.
+There are 3 convolutionl layers, and 2 fully connected layers. Adam optimizer was used for computing and applying gradients. Max pooling swith stride of 2 was used.
+Activation function was relu. It was found that 10 epochs was necessary to get a decent validation accuracy
+(above 93% threshold). The following accuracy was achieved:
+
+* training set accuracy of 0.984
+* validation set accuracy of 0.924
+* test set accuracy of  0.903
+* web set accuracy of 0.571 (4/7)
+
+Although the accuracy was good for training and validation data, it was quite low for traffic signs downloaded from the internet.
+Looks like the model was overfit. After added dropout to the two fully connected layer,
+Better test data accuracy was achieved. Tried with different dropout value, 75% keep rate seems to be the best.
+At this stage, the accuracy was as the following:
+
+* training set accuracy of 0.995
+* validation set accuracy of 0.936
+* test set accuracy of  0.917
+* web set accuracy of 0.571 (4/7)
+
+The accuracy of recognizing images downloaded from internet was still not good.
+In attempt to further improve the accuracy, more training data was added by rotating existing images.
+The training data was augmented in such a way that each traffic sign type (class) contains same number of
+images(2200). It gives each class the same distribution.
+
+After augment the data, the accuracy has tremendously improved for the images downloaded from internet (web set), as the following:
 
 ### Model Accuracy
 
@@ -163,7 +194,6 @@ My final model results were:
 * test set accuracy of  0.932
 * web set accuracy of 0.857
 
-Drop out greatly improve accuracy
 
 
 ## Test a Model on New Images
